@@ -22,3 +22,14 @@ p {
     border: 4px;
     padding: 100px 20px 40px 20px;
 }
+/******************LARGE DEVICES*****************/
+@media (min-width: 992px) {
+    p {
+        width: 80%;
+    }
+}
+
+/******************MEDIUM DEVICES*****************/
+
+
+/******************SMALL DEVICES*****************/
