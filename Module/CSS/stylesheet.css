@@ -11,8 +11,11 @@ h2 {
     background-color: rgb(71, 160, 238);
 }
 p {
+    border: 1px solid black;
     font-size: 14px;
     background-color: rgb(139, 139, 139);
+    width: 300px;
+    height: 300px;
 }
 .bigbox {
     width: 15em;
