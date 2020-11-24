@@ -23,13 +23,22 @@ p {
     padding: 100px 20px 40px 20px;
 }
 /******************LARGE DEVICES*****************/
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     p {
         width: 80%;
     }
 }
 
 /******************MEDIUM DEVICES*****************/
-
+@media (min-width: 768px) and (max-width: 991px) {
+    p {
+        width: 50%;
+    }
+}
 
 /******************SMALL DEVICES*****************/
+@media (max-width: 767px) {
+    p {
+        width: 25%;
+    }
+}
