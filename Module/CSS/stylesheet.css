@@ -14,3 +14,8 @@ p {
     font-size: 14px;
     background-color: rgb(139, 139, 139);
 }
+.bigbox {
+    width: 15em;
+    border: 1px;
+    padding: 10px;
+}
