@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 50px;
+}
+.box {
+   background-color: rgb(206, 215, 218);
+    float: left;
+    width: 340px;
+    height: 170px;
+    border: solid black;
+    margin: 30px;
+    padding: 0 15px 15px 15px;
+    text-align: center;
+    overflow: hidden;
+}
+P {
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+    position: relative;
+    top: -23px;
+    left: 202px;
+    width: 120px;
+    height: 32px;
+    border: solid black;
+    
+}
+#pir {
+    background-color: rgb(218, 160, 52);
+}
+#ant {
+    background-color: rgb(40, 157, 211);
+}
+#tre {
+    background-color: rgb(207, 65, 89);
+}
+/******************LARGE DEVICES*****************/
+@media (min-width: 992px) {
+    .box {
+        width: fixed;
+    }
+}
+
+/******************MEDIUM DEVICES*****************/
+@media (min-width: 768px) and (max-width: 991px) {
+    #pirma, #antra {
+        width: 50%;
+        width: fixed;
+    }
+    #trecia {
+        width: 100%;
+     
+    }
+}
