@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/**Header**/
+.navbar {
+    background-color: grey;
+    border-radius: 0;
+    border: 0;
+}
+.navbar-brand {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: wheat;
+    font-size: 1.7em;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar-header a:hover, .navbar-header a:focus {  /**kad paspaudus nesispalvotu tekstas**/
+    text-decoration: none;
+}
+
+/** .navbar, button.navbar-toggler, .navbar-toggler-icon {
+    border: px solid rgb(56, 5, 139)
+} **/
+.row {
+    width: 100%; 
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.container {
+    position: relative;
+    float: left;
+    width: 400px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section {
+    margin: 10px;
+    border: black;
+    border-style: solid;
+    height: 700px;
+    padding: 15px;
+    background-color: rgb(230, 215, 173);
+}
+h3 {
+    padding-bottom: 15px;
+}
+/* Extra small devices (phones, -767px and up) */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        position: fixed;
+        top:0; 
+        bottom: 0;
+        left: 100%;
+        width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: black;
+        transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+      }
+      .navbar-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
+      }
+
+}
+
+/* Small devices (tablets, 768-991px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    button.navbar-toggler {
+        visibility: hidden;
+    }
+}
+
+/* Medium devices (desktops, 992-1199) */
+@media (min-width: 992px) and (max-width: 1199px) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
