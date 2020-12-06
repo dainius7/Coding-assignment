@@ -3,15 +3,14 @@
     padding: 0;
     margin: 0;
 }
-/**Header**/
+/**NAVBAR**/
 .navbar {
-    background-color: grey;
     border-radius: 0;
     border: 0;
+    font-style: wheat;
 }
 .navbar-brand {
     font-family: 'Barlow Condensed', sans-serif;
-    color: wheat;
     font-size: 1.7em;
     font-weight: bold;
     position: relative;
@@ -21,39 +20,60 @@
 .navbar-header a:hover, .navbar-header a:focus {  /**kad paspaudus nesispalvotu tekstas**/
     text-decoration: none;
 }
-
+.navbar-collapse {
+    text-align: center;
+}
+.nav-item {
+    border: solid rgb(255, 255, 255);
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 5px;
+    font: bold;
+ 
+}
 /** .navbar, button.navbar-toggler, .navbar-toggler-icon {
     border: px solid rgb(56, 5, 139)
 } **/
+
+/** MENU struktura **/
 .row {
     width: 100%; 
     height: auto;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px;
 }
 .container {
     position: relative;
     float: left;
-    width: 400px;
+    width: 400px; /**nustaciau konkretu dydi**/
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 section {
     margin: 10px;
-    border: black;
+    border: black; /**tik cia uzdejau borderius**/
     border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
     height: 700px;
     padding: 15px;
     background-color: rgb(230, 215, 173);
 }
+/** MENU stilius **/
 h3 {
     padding-bottom: 15px;
 }
+p {
+   font-style: italic; 
+   text-align: justify;
+}
+
 /* Extra small devices (phones, -767px and up) */
 @media (max-width: 767px) {
     .navbar-collapse {
-        position: fixed;
+        position: relative;
+        float: left;
         top:0; 
         bottom: 0;
         left: 100%;
@@ -62,8 +82,7 @@ h3 {
         padding-left: 1rem;
         overflow-y: auto;
         visibility: hidden;
-        background-color: black;
-        transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+     /**   transition: visibility .1s ease-in-out, -webkit-transform .1s ease-in-out; **/
       }
       .navbar-collapse.show {
         visibility: visible;
@@ -80,7 +99,15 @@ h3 {
 }
 
 /* Medium devices (desktops, 992-1199) */
-@media (min-width: 992px) and (max-width: 1199px) { ... }
+@media (min-width: 992px) and (max-width: 1199px) { 
+    .nav-item {
+        visibility: hidden;
+    }
+}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+    .nav-item {
+        visibility: hidden;
+    }
+}
